@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfólio Dev</title>
+  <!-- Bootstrap 5.3 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/10456/10456439.png" type="image/png">k
+  <style>
+    body {
+      scroll-behavior: smooth;
+    }
+    .hero {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, lightgray, gray);
+      background-attachment: fixed;
+      color: white;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+    .hero p {
+      font-size: 1.2rem;
+    }
+    .portfolio-card img {
+      height: 200px;
+      object-fit: cover;
+    }
+    footer {
+      background: #212529;
+      color: #fff;
+      padding: 20px 0;
+    }
+      .portfolio-card iframe {
+    height: 300px; /* aumenta a altura do preview */
+    border: 0;
+  }
+  .portfolio-card {
+    min-height: 450px; /* deixa o card mais alto */
+  }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top p-3">
+    <div class="container">
+      <a class="navbar-brand" href="#">Gabriel Lopes</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+              data-bs-target="#navbarNav" aria-controls="navbarNav" 
+              aria-expanded="false" aria-label="Menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">Portfólio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Olá, eu sou Gabriel Lopes</h1>
+    <p>Desenvolvedor Fullstack apaixonado por tecnologia e inovação.</p>
+    <a href="#portfolio" class="btn btn-light btn-lg mt-3">Ver Projetos</a>
+  </section>
+
+  <!-- Sobre -->
+  <section id="sobre" class="container py-5">
+    <div class="row align-items-center">
+      <div class="col-md-4">
+        <img src="https://media.licdn.com/dms/image/v2/D4D03AQFW8g8SQ2_QKA/profile-displayphoto-shrink_100_100/B4DZimcuYQHwAU-/0/1755139204930?e=1760572800&v=beta&t=0RbTtMyul5_mBB_j-Dtm6mn2TYJ6ClhnEixRQRifxEE" class="img-fluid rounded-circle w-50 h-50" alt="Foto Dev">
+      </div>
+      <div class="col-md-8">
+        <h2>Sobre Mim</h2>
+        <p>
+          Sou estudante em frontend e backend. 
+          Pretendendo transformar ideias em soluções digitais, 
+          utilizando tecnologias modernas e boas práticas de desenvolvimento.
+        </p>
+        <p>
+          Tenho interesse em trabalhar em projetos desafiadores e colaborar em equipes criativas.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+<!-- Portfólio -->
+<section id="portfolio" class="bg-light py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Meus Projetos</h2>
+    <div class="row g-4">
+
+      <!-- Projeto 1 -->
+      <div class="col-md-4">
+        <div class="card portfolio-card shadow-sm">
+          <iframe src="https://galopes1.github.io/projeto-android/" 
+                  class="w-100" loading="lazy"></iframe>
+          <div class="card-body">
+            <h5 class="card-title">Projeto Android</h5>
+            <p class="card-text">Site sobre Android feito em HTML e CSS.</p>
+            <a href="https://galopes1.github.io/projeto-android/" target="_blank" class="btn btn-primary">Abrir Projeto</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projeto 2 -->
+      <div class="col-md-4">
+        <div class="card portfolio-card shadow-sm">
+          <iframe src="https://galopes1.github.io/TCC/" 
+                  class="w-100" loading="lazy"></iframe>
+          <div class="card-body">
+            <h5 class="card-title">TCC</h5>
+            <p class="card-text">Trabalho de Conclusão de Curso em Informática.</p>
+            <a href="https://galopes1.github.io/TCC/" target="_blank" class="btn btn-primary">Abrir Projeto</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projeto 3 -->
+      <div class="col-md-4">
+        <div class="card portfolio-card shadow-sm">
+          <iframe src="https://galopes1.github.io/Clonando-sites/site001/" 
+                  class="w-100" loading="lazy"></iframe>
+          <div class="card-body">
+            <h5 class="card-title">Clone de Site</h5>
+            <p class="card-text">Projeto de clonagem de layout para treino.</p>
+            <a href="https://galopes1.github.io/Clonando-sites/site001/" target="_blank" class="btn btn-primary">Abrir Projeto</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- Habilidades e Conhecimentos -->
+<section id="habilidades" class="container py-5">
+  <h2 class="text-center mb-4">Habilidades e Conhecimentos</h2>
+  <div class="row text-center">
+
+    <div class="col-md-3 col-6 mb-4">
+      <div class="card shadow-sm p-3 h-100">
+        <h5 class="card-title">Frontend</h5>
+        <p class="card-text">HTML, CSS, JavaScript, PHP, Angular</p>
+      </div>
+    </div>
+
+    <div class="col-md-3 col-6 mb-4">
+      <div class="card shadow-sm p-3 h-100">
+        <h5 class="card-title">Backend</h5>
+        <p class="card-text">Java, C#, C++, Python</p>
+      </div>
+    </div>
+
+    <div class="col-md-3 col-6 mb-4">
+      <div class="card shadow-sm p-3 h-100">
+        <h5 class="card-title">Banco de Dados</h5>
+        <p class="card-text">MySQL, MongoDB</p>
+      </div>
+    </div>
+
+    <div class="col-md-3 col-6 mb-4">
+      <div class="card shadow-sm p-3 h-100">
+        <h5 class="card-title">Outros</h5>
+        <p class="card-text">Git/GitHub, Linux, Docker (básico)</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer class="text-center">
+    <p>&copy; 2025 Gabriel Lopes - Todos os direitos reservados</p>
+    <div>
+      <a href="https://linkedin.com/in/gabriel-antônio-lopes-2ba74037a" class="text-light me-3" target="_blank">LinkedIn</a>
+      <a href="https://github.com/galopes1" class="text-light me-3" target="_blank">GitHub</a>
+    </div>
+  </footer>
+
+</body>
+</html>
